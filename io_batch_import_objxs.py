@@ -43,8 +43,8 @@ from bpy.props import (BoolProperty,
                        )
 
 
-class ImportMultipleObjs(bpy.types.Operator, ImportHelper):
-    """Batch Import Wavefront obj"""
+class ImportMultipleObjxs(bpy.types.Operator, ImportHelper):
+    """Batch Import Wavefront objx"""
     bl_idname = "import_scene.multiple_objxs"
     bl_label = "Import multiple OBJx's"
     bl_options = {'PRESET', 'UNDO'}
@@ -196,15 +196,15 @@ class ImportMultipleObjs(bpy.types.Operator, ImportHelper):
 
 # Only needed if you want to add into a dynamic menu
 def menu_func_import(self, context):
-    self.layout.operator(ImportMultipleObjs.bl_idname, text="Wavefront Batch (.objx)")
+    self.layout.operator(ImportMultipleObjxs.bl_idname, text="Wavefront with 4xUV,VC,Mat Batch (.objx)")
 
 
 def register():
-    bpy.utils.register_class(ImportMultipleObjs)
+    bpy.utils.register_class(ImportMultipleObjxs)
     bpy.types.TOPBAR_MT_file_import.append(menu_func_import)
 
 def unregister():
-    bpy.utils.unregister_class(ImportMultipleObjs)
+    bpy.utils.unregister_class(ImportMultipleObjxs)
     bpy.types.TOPBAR_MT_file_import.remove(menu_func_import)
 
 
