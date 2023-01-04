@@ -19,14 +19,14 @@
 
 bl_info = {
     "name": "Batch Import Wavefront (.objx)",
-    "author": "p2or",
+    "author": "p2or, VidhosticeSDK",
     "version": (0, 3, 0),
     "blender": (2, 92, 0),
     "location": "File > Import-Export",
     "description": "Import multiple OBJx files, their UV's and materials",
     "warning": "",
     "wiki_url": "",
-    "tracker_url": "https://github.com/p2or/blender-batch-import-wavefront-obj",
+    "tracker_url": "https://github.com/VidhosticeSDK/Blender-batch-import-OBJx",
     "category": "Import-Export"}
 
 
